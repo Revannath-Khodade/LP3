@@ -1,0 +1,47 @@
+| ❓ Question                                                           | 💬 Answer                                                                      |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Q1. What is Huffman coding?                                          | A lossless data compression algorithm based on character frequencies.          |
+| Q2. What is the main idea behind Huffman Coding?                     | Assign shorter binary codes to frequent symbols and longer codes to rare ones. |
+| Q3. What type of algorithm is it?                                    | Greedy algorithm.                                                              |
+| Q4. What data structure is used?                                     | Min Heap (Priority Queue).                                                     |
+| Q5. What does each node in Huffman Tree represent?                   | A character (leaf node) or combined frequency (internal node).                 |
+| Q6. What is the time complexity?                                     | O(n log n)                                                                     |
+| Q7. What is the space complexity?                                    | O(n)                                                                           |
+| Q8. What is the output of Huffman coding?                            | A set of variable-length binary codes for each symbol.                         |
+| Q9. What are real-world applications?                                | File compression (ZIP), image compression (JPEG), video (MPEG).                |
+| Q10. Why is Huffman Coding called lossless?                          | Because no data is lost during compression or decompression.                   |
+| Q11. What is the difference between Huffman and Run-Length Encoding? | Huffman uses frequency-based binary tree; RLE counts consecutive symbols.      |
+| Q12. Can two characters have the same code?                          | No, Huffman codes are prefix-free — no code is a prefix of another.            |
+
+
+
+
+| Concept             | Description                                                |
+| ------------------- | ---------------------------------------------------------- |
+| Algorithm Type      | Greedy Algorithm                                           |
+| Goal                | Compress data by minimizing average code length            |
+| Data Structure Used | Binary Tree + Min Heap                                     |
+| Principle           | Combine two smallest frequencies repeatedly                |
+| Encoding Rule       | Left → ‘0’, Right → ‘1’                                    |
+| Application         | Text compression, data transmission (e.g., ZIP, JPEG, MP3) |
+
+
+
+| Type         | Description                      | Complexity     |
+| ------------ | -------------------------------- | -------------- |
+| ⏱️ **Time**  | Building Huffman Tree using heap | **O(n log n)** |
+| 💾 **Space** | Storing nodes and tree           | **O(n)**       |
+
+
+
+
+Huffman Coding Algorithm
+
+Huffman coding is a Greedy Algorithm used for data compression.
+It builds a binary tree where each leaf node represents a symbol and its frequency.
+The two smallest frequencies are combined iteratively until one root remains.
+Codes are assigned: Left → 0, Right → 1.
+The algorithm minimizes the total number of bits required.
+
+Complexity:
+Time = O(n log n), Space = O(n)

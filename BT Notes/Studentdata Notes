@@ -1,0 +1,25 @@
+| No. | Question                                                     | Answer                                                                                                                                |
+| --- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | What is a **structure** in Solidity?                         | A user-defined data type that groups related variables of different data types.                                                       |
+| 2   | Why do we use **arrays** here?                               | To store multiple student records dynamically.                                                                                        |
+| 3   | Difference between **fallback** and **receive** functions?   | `receive()` handles plain Ether transfers. `fallback()` handles invalid function calls or Ether transfers when no `receive()` exists. |
+| 4   | What is the visibility keyword **external**?                 | Functions marked `external` can only be called from outside the contract (not internally).                                            |
+| 5   | Why use `memory` keyword for strings?                        | To temporarily store data in memory, not on blockchain storage (reduces gas cost).                                                    |
+| 6   | What happens if a student ID is not found?                   | Function returns `"Not Found"`.                                                                                                       |
+| 7   | What is **Gas** in Ethereum?                                 | A unit that measures computational work of transactions or smart contract execution.                                                  |
+| 8   | What is the **fallback function** used for in this contract? | To handle unexpected Ether or invalid calls gracefully.                                                                               |
+| 9   | Can this contract receive Ether?                             | Yes, because it has both `receive()` and `fallback()` payable functions.                                                              |
+| 10  | What is the **data location** of a struct in an array?       | Stored in **storage** by default since arrays are state variables.                                                                    |
+| 11  | How to check gas usage in Remix?                             | After a transaction, expand the details in Remix’s console/log to view “Gas used” and “Transaction cost”.                             |
+| 12  | What version pragma is used here?                            | `pragma solidity ^0.8.0;` — ensures compiler version 0.8.0 or above.                                                                  |
+
+
+
+
+addStudent():
+Time → O(1) (push to array)
+Space → O(1)
+
+getStudent():
+Time → O(n) (linear search)
+Space → O(1)

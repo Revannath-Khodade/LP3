@@ -1,0 +1,56 @@
+🔹 What is MetaMask?
+MetaMask is a cryptocurrency wallet and gateway to blockchain applications (like Ethereum and DApps).
+It allows users to send, receive, and store Ether (ETH) and other ERC-20 tokens.
+
+
+🔹 Security Features
+Password protection
+Private key and seed phrase backup
+Integration with hardware wallets (Ledger, Trezor)
+Open-source, trusted by Ethereum users globally.
+
+
+| No. | Question                                                      | Answer                                                                                      |
+| --- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 1   | What is MetaMask?                                             | A browser-based Ethereum wallet used for managing, sending, and receiving Ether and tokens. |
+| 2   | Why do we use MetaMask in blockchain projects?                | To interact with smart contracts and decentralized apps (DApps) on Ethereum blockchain.     |
+| 3   | What is a wallet address?                                     | A unique public identifier (like an account number) used to receive or send crypto.         |
+| 4   | What is the recovery phrase (seed phrase)?                    | A 12-word secret phrase used to restore wallet access.                                      |
+| 5   | Can you recover your MetaMask wallet without the seed phrase? | No, without it, access is permanently lost.                                                 |
+| 6   | What are Gas and Gas Fees?                                    | Gas is the computational cost of transactions; Gas Fee = Gas Used × Gas Price.              |
+| 7   | What network does MetaMask connect to by default?             | The Ethereum Mainnet.                                                                       |
+| 8   | What are test networks in Ethereum?                           | Networks like Sepolia or Goerli used for testing without real Ether.                        |
+| 9   | How do you add Ether to MetaMask on testnet?                  | By using a faucet that provides free test Ether.                                            |
+| 10  | What happens if you set very low Gas Price?                   | The transaction will be delayed or may fail.                                                |
+| 11  | What are the main components of MetaMask UI?                  | Account name, balance, network selector, and transaction history.                           |
+| 12  | What is the difference between a private key and public key?  | Public key = wallet address; Private key = used to sign transactions (keep secret).         |
+| 13  | Why is MetaMask considered a non-custodial wallet?            | Because users, not a third party, control their private keys.                               |
+| 14  | How can you view Gas details of a transaction?                | Open transaction in MetaMask → Click “Activity” → View Gas Fee and Total ETH spent.         |
+| 15  | What happens when you send Ether to another address?          | A blockchain transaction occurs, validated by miners/validators, and Ether is transferred.  |
+
+
+
+🧾 Summary Notes
+
+MetaMask is essential for Ethereum-based experiments.
+Every blockchain transaction requires Gas Fee.
+You can practice safely using Sepolia Test Network.
+Always back up your seed phrase securely.
+MetaMask connects directly with Remix IDE for deploying Solidity contracts.
+
+
+| **Q.No.** | **Question**                                                            | **Answer**                                                                                                                                                                                   |
+| :-------: | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     1     | **Demonstrate how to install MetaMask.**                                | Go to [metamask.io](https://metamask.io) → click “Download” → choose your browser → install the extension → click MetaMask icon → create or import a wallet.                                 |
+|     2     | **Show your created wallet and its address.**                           | Open MetaMask → Click on account name → copy the public address (starts with “0x...”) → show it to the examiner.                                                                             |
+|     3     | **How will you obtain test Ether?**                                     | Select **Sepolia Test Network** → visit a faucet like [[https://sepoliafaucet.com](https://sepoliafaucet.com)] → paste your wallet address → click “Request Ether” → Ether will be credited. |
+|     4     | **What is Gas? How is it calculated?**                                  | Gas is the computational unit to execute transactions or smart contracts. **Gas Fee = Gas Used × Gas Price.** Example: 21,000 × 5 Gwei = 0.000105 ETH.                                       |
+|     5     | **Show how to view transaction fees.**                                  | Open MetaMask → Go to **Activity tab** → Click on the transaction → it shows “Gas Used,” “Gas Price,” and “Total Fee.”                                                                       |
+|     6     | **What happens if you forget your seed phrase?**                        | You will permanently lose access to your wallet and funds. The wallet cannot be recovered without the 12-word seed phrase.                                                                   |
+|     7     | **What’s the difference between Mainnet and Testnet?**                  | **Mainnet:** Real Ether and real transactions (costs money). **Testnet:** Fake Ether for testing (free). Used for development and learning.                                                  |
+|     8     | **How does MetaMask connect to Remix IDE?**                             | In Remix, open “Deploy & Run Transactions” tab → select **Environment: Injected Provider – MetaMask** → MetaMask pops up for confirmation → click “Connect.”                                 |
+|     9     | **Why is MetaMask important for blockchain smart contract deployment?** | MetaMask provides the bridge between the browser (Remix IDE) and Ethereum network, enabling signing and sending of smart contract transactions securely.                                     |
+|     10    | **Perform a sample transaction and show Gas used.**                     | Send 0.01 test ETH to another wallet → confirm the transaction → open “Activity” → view Gas Used (≈21,000) and total fee in ETH.                                                             |
+
+
+

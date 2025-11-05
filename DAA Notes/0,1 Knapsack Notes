@@ -1,0 +1,12 @@
+| ❓ Question                                                               | 💬 Answer                                                                                                               |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| Q1. What is the Knapsack problem?                                        | It is an optimization problem where we maximize the total value without exceeding weight capacity.                      |
+| Q2. Why is it called “0/1” Knapsack?                                     | Because each item can either be included (1) or excluded (0).                                                           |
+| Q3. What technique is used here?                                         | Dynamic Programming (Bottom-Up).                                                                                        |
+| Q4. What does `dp[i][w]` represent?                                      | The maximum value obtainable with the first `i` items and capacity `w`.                                                 |
+| Q5. What is the time complexity of this algorithm?                       | O(n × W)                                                                                                                |
+| Q6. What is the space complexity?                                        | O(n × W)                                                                                                                |
+| Q7. What is the difference between 0/1 Knapsack and Fractional Knapsack? | 0/1 Knapsack uses DP and doesn’t allow fractions; Fractional Knapsack uses Greedy approach and allows fractional parts. |
+| Q8. What are the base conditions in this program?                        | When `i=0` or `w=0`, the maximum value is 0.                                                                            |
+| Q9. What kind of problem is Knapsack used for in real life?              | Cargo loading, budget allocation, project selection, etc.                                                               |
+| Q10. Can we optimize space?                                              | Yes, by using a 1D array instead of a 2D DP table (O(W) space).                                                         |

@@ -1,0 +1,12 @@
+| No. | Question                                                    | Answer                                                                                                            |
+| --- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| 1   | What is the Knapsack Problem?                               | It’s an optimization problem where we select items to maximize total value without exceeding the weight capacity. |
+| 2   | What is the difference between 0/1 and Fractional Knapsack? | In 0/1, you can’t break an item; in Fractional, you can take fractions of items.                                  |
+| 3   | Which algorithm is used in Fractional Knapsack?             | **Greedy Algorithm**.                                                                                             |
+| 4   | Why do we sort by value/weight ratio?                       | To prioritize items that give the highest value per unit weight.                                                  |
+| 5   | What is the time complexity?                                | **O(n log n)** because of sorting.                                                                                |
+| 6   | What is the space complexity?                               | **O(n)** for storing item details.                                                                                |
+| 7   | Can we use Dynamic Programming here?                        | Not needed — Greedy gives optimal result for fractional knapsack.                                                 |
+| 8   | What is the real-life example of this problem?              | Cargo loading, resource allocation, investment profit maximization.                                               |
+| 9   | What does the lambda function do in this code?              | It calculates and sorts items by their value/weight ratio.                                                        |
+| 10  | What is the output of this program?                         | `Maximum value in knapsack = 240.0`                                                                               |

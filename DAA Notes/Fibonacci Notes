@@ -11,3 +11,11 @@
 | Can recursion lead to memory overflow?               | Yes, due to deep call stack if `n` is large.                                         |
 | What is memoization?                                 | Technique to store and reuse previous results to optimize recursion.                 |
 | Why do we study Fibonacci in programming?            | It demonstrates recursion, dynamic programming, and algorithm optimization concepts. |
+
+
+
+
+| Method              | Time Complexity | Space Complexity | Notes                             |
+| ------------------- | --------------- | ---------------- | --------------------------------- |
+| Recursive Fibonacci | O(2ⁿ)           | O(n)             | Slow due to repeated calculations |
+| Iterative Fibonacci | O(n)            | O(1)             | Fast and memory efficient         |

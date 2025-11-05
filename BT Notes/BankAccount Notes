@@ -1,0 +1,58 @@
+| ❓ Question                                                            | 💡 Answer                                                                              |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Q1. What is the purpose of this contract?                             | It allows users to deposit, withdraw, and view their Ether balance securely.           |
+| Q2. What does the keyword `payable` mean?                             | It allows the function to receive Ether along with the function call.                  |
+| Q3. What is `mapping` in Solidity?                                    | It’s a data structure that stores key-value pairs; here it maps addresses to balances. |
+| Q4. What is the difference between `msg.sender` and `msg.value`?      | `msg.sender` is the address calling the function; `msg.value` is the Ether sent.       |
+| Q5. Why is `require()` used?                                          | It ensures input and transaction conditions are valid; otherwise, it reverts.          |
+| Q6. What happens if a user tries to withdraw more than their balance? | The transaction fails due to the `require()` condition.                                |
+| Q7. Why use `call{value: amount}` for sending Ether?                  | It’s the safest and most recommended method to transfer Ether in Solidity ≥0.8.0.      |
+| Q8. What is the unit of Ether in Solidity?                            | Wei (1 Ether = 10¹⁸ Wei).                                                              |
+| Q9. What is `external view` function?                                 | A function callable externally that doesn’t modify blockchain state.                   |
+| Q10. What is gas fee?                                                 | The transaction fee paid to miners for executing smart contract functions.             |
+
+
+
+
+| Question                                             | Answer                                                              |
+| ---------------------------------------------------- | ------------------------------------------------------------------- |
+| What happens if you don’t mark deposit() as payable? | The function cannot receive Ether and will throw an error.          |
+| Can multiple users use this same contract?           | Yes, because each user’s balance is stored using their address key. |
+| How can we check total Ether in contract?            | By using `address(this).balance`.                                   |
+| What happens if transfer fails?                      | The transaction is reverted and Ether is not deducted.              |
+| What is the advantage of blockchain in banking?      | Decentralized, transparent, and secure transactions.                |
+
+
+
+| Concept        | Meaning                                         |
+| -------------- | ----------------------------------------------- |
+| **msg.sender** | Address of the account that called the function |
+| **msg.value**  | Ether sent with the transaction                 |
+| **payable**    | Function can receive Ether                      |
+| **require()**  | Used for condition checks and input validation  |
+| **mapping**    | Key-value pair data storage                     |
+| **call**       | Safe low-level function to send Ether           |
+| **external**   | Function can be called outside the contract     |
+| **view**       | Function that only reads blockchain data        |
+
+
+
+| Operation     | Time | Gas Usage                       |
+| ------------- | ---- | ------------------------------- |
+| deposit()     | O(1) | ~21,000 gas (varies)            |
+| withdraw()    | O(1) | ~23,000 gas (depends on amount) |
+| showBalance() | O(1) | Free (view function)            |
+
+
+
+| Concept                 | Description                               |
+| ----------------------- | ----------------------------------------- |
+| **Smart Contract Name** | BankAccount                               |
+| **Language**            | Solidity                                  |
+| **Blockchain Used**     | Ethereum                                  |
+| **Wallet Interaction**  | Through MetaMask                          |
+| **Main Functions**      | deposit(), withdraw(), showBalance()      |
+| **Data Structure**      | mapping(address → uint256)                |
+| **Purpose**             | Store and manage Ether for multiple users |
+| **Transaction Type**    | Payable and Non-payable                   |
+| **Security**            | Uses `require()` to validate conditions   |

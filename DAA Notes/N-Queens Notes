@@ -1,0 +1,33 @@
+| ❓ **Question**                                                 | 💬 **Answer**                                                                         |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Q1. What is the N-Queen problem?                               | It is to place N queens on an N×N chessboard so that no two queens attack each other. |
+| Q2. What technique is used here?                               | Backtracking (a type of recursive algorithm).                                         |
+| Q3. What does “backtracking” mean?                             | Trying all possibilities, and undoing (backtracking) when a partial solution fails.   |
+| Q4. Why are we using sets for columns and diagonals?           | To efficiently check if a queen’s position is under attack in O(1) time.              |
+| Q5. What is the base condition of recursion?                   | When all queens are successfully placed (`r == n`).                                   |
+| Q6. How many possible configurations are there for N-Queens?   | It depends on N; for example, 4-Queens has 2 solutions, 8-Queens has 92.              |
+| Q7. What is the time complexity?                               | O(N!).                                                                                |
+| Q8. How do we represent the board?                             | As a 2D matrix using lists in Python.                                                 |
+| Q9. What is the purpose of `posDiag` and `negDiag`?            | To check diagonal attacks (`r+c` and `r-c`).                                          |
+| Q10. What happens when no valid position is found for a queen? | The algorithm backtracks and tries a different column in the previous row.            |
+
+
+
+
+| Concept            | Explanation                                 |
+| ------------------ | ------------------------------------------- |
+| Problem Type       | Constraint satisfaction problem             |
+| Approach           | Backtracking                                |
+| Representation     | Matrix (2D list)                            |
+| Conditions Checked | No two queens share same column or diagonal |
+| Fixed Condition    | First queen is already placed               |
+| Goal               | Generate all safe configurations            |
+| Use Case           | AI, chess, constraint solvers               |
+
+
+
+
+| Type     | Complexity | Explanation                                                |
+| -------- | ---------- | ---------------------------------------------------------- |
+| ⏱️ Time  | **O(N!)**  | Because every queen placement leads to recursive branching |
+| 💾 Space | **O(N²)**  | For the board and recursion stack                          |

@@ -1,0 +1,167 @@
+🎯 Uber Fare Prediction – Oral Questions & Answers
+🔹 1. What is the objective of this project?
+
+👉 To predict the price (fare amount) of an Uber ride using pickup and drop-off details.
+
+🔹 2. What type of problem is this?
+
+👉 It’s a regression problem, because the target variable (fare_amount) is continuous.
+
+🔹 3. What are the main steps in your project?
+
+👉
+
+Data Preprocessing
+
+Outlier Detection & Removal
+
+Feature Extraction (like distance, time, etc.)
+
+Correlation Analysis
+
+Model Training (Linear Regression & Random Forest)
+
+Model Evaluation (R², RMSE, MAE)
+
+🔹 4. How did you preprocess the dataset?
+
+👉
+
+Converted pickup_datetime to datetime format.
+
+Extracted features: hour, day, month, year, day_of_week.
+
+Calculated distance_km using the Haversine formula.
+
+Removed invalid values (0s, negative fares, out-of-range coordinates).
+
+🔹 5. What is the Haversine formula?
+
+👉 It calculates the great-circle distance between two latitude/longitude points on Earth (in km).
+Used to find the distance of the ride.
+
+🔹 6. How did you identify or remove outliers?
+
+👉
+
+Removed rows with fare > 100 or fare ≤ 0.
+
+Removed rows with passenger_count outside 1–6.
+
+Removed coordinates outside NYC latitude/longitude bounds.
+
+🔹 7. What features (independent variables) did you use?
+
+👉
+['distance_km','hour','day','month','year','passenger_count']
+
+🔹 8. What is your target variable?
+
+👉 fare_amount
+
+🔹 9. What models did you use?
+
+👉
+
+Linear Regression
+
+Random Forest Regressor
+
+🔹 10. What is Linear Regression?
+
+👉 A model that fits a straight line relationship between features and the target using:
+
+𝑦
+=
+𝑚
+1
+𝑥
+1
++
+𝑚
+2
+𝑥
+2
++
+.
+.
+.
++
+𝑏
+y=m
+1
+	​
+
+x
+1
+	​
+
++m
+2
+	​
+
+x
+2
+	​
+
++...+b
+🔹 11. What is Random Forest Regression?
+
+👉 An ensemble model that builds multiple decision trees and averages their outputs to improve accuracy and reduce overfitting.
+
+🔹 12. What performance metrics did you use?
+
+👉
+
+R² Score – how well model explains variance (closer to 1 is better).
+
+RMSE (Root Mean Squared Error) – measures average prediction error.
+
+MAE (Mean Absolute Error) – average absolute difference between predicted and actual fares.
+
+🔹 13. What are your results?
+
+👉
+Linear Regression:
+
+R² = 0.72
+
+RMSE = 4.94
+
+MAE = 2.36
+
+Random Forest:
+
+R² = 0.80
+
+RMSE = 4.17
+
+MAE = 2.20
+
+🔹 14. Which model performed better and why?
+
+👉 Random Forest performed better because it can handle non-linear relationships and outliers better than Linear Regression.
+
+🔹 15. What does a higher R² value mean?
+
+👉 It means the model explains more variability of the target variable — better performance.
+
+🔹 16. What does RMSE represent in this context?
+
+👉 It shows how far the predicted fares are (on average) from the actual fares, in fare units (dollars).
+
+🔹 17. Why did you use both models?
+
+👉 To compare a simple model (Linear Regression) and a complex model (Random Forest) to see which gives better accuracy.
+
+🔹 18. What is the correlation between distance and fare?
+
+👉 Strong positive correlation — as distance increases, fare also increases.
+
+🔹 19. Why did you extract date and time features?
+
+👉 Because time, day, and month can influence fare due to traffic, demand, or surge pricing.
+
+🔹 20. What conclusion can you draw from this project?
+
+👉 Uber fare mainly depends on distance and time-related features; Random Forest gives better prediction accuracy (~80%).

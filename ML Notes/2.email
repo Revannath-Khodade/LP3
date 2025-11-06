@@ -1,0 +1,59 @@
+1️⃣ Q: What is the main objective of this experiment?
+   A: The objective is to classify emails as Spam or Not Spam using machine learning algorithms — Support Vector Machine (SVM) and K-Nearest Neighbors (KNN).
+
+2️⃣ Q: What type of problem is Email Spam Detection?
+   A: It is a binary classification problem because there are only two possible outcomes — Spam (1) or Not Spam (0).
+
+3️⃣ Q: Which dataset did you use?
+   A: I used the "emails.csv" dataset from Kaggle, which contains 3000 word frequency features and one target column called "Prediction".
+
+4️⃣ Q: What are the features and labels in this dataset?
+   A: The features are the frequency of specific words in each email, and the label (target) is whether the email is spam or not.
+
+5️⃣ Q: What is the role of the Support Vector Machine (SVM)?
+   A: SVM finds the best hyperplane that separates spam and non-spam emails with the maximum margin.
+
+6️⃣ Q: What kernel did you use for SVM and why?
+   A: I used the RBF (Radial Basis Function) kernel because it performs well with high-dimensional and non-linear data.
+
+7️⃣ Q: What are the key parameters of SVM used here?
+   A: The parameters are C=1.0, kernel='rbf', and gamma='auto'.
+
+8️⃣ Q: What is the working principle of K-Nearest Neighbors (KNN)?
+   A: KNN classifies a new email based on the majority class of its k nearest neighbors in the feature space.
+
+9️⃣ Q: What value of ‘k’ did you choose and why?
+   A: I chose k=7 because it gave a good balance between bias and variance after testing different values.
+
+10️⃣ Q: What accuracy did SVM achieve?
+    A: SVM achieved an accuracy of approximately 89.3%.
+
+11️⃣ Q: What accuracy did KNN achieve?
+    A: KNN achieved an accuracy of approximately 86.6%.
+
+12️⃣ Q: Which model performed better and why?
+    A: SVM performed better overall due to higher accuracy and balanced precision and recall.
+
+13️⃣ Q: Which model detected more spam emails?
+    A: KNN detected more spam emails since it had a higher recall for the spam class.
+
+14️⃣ Q: What is a confusion matrix?
+    A: A confusion matrix shows the number of correct and incorrect predictions for each class — True Positives, True Negatives, False Positives, and False Negatives.
+
+15️⃣ Q: What are precision and recall?
+    A: Precision measures how many predicted spam emails were actually spam. Recall measures how many actual spam emails were correctly detected.
+
+16️⃣ Q: What preprocessing steps did you perform?
+    A: I removed unnecessary columns and split the dataset into features (X) and labels (Y). Then I divided it into training and testing sets.
+
+17️⃣ Q: What percentage of data was used for testing?
+    A: 25% of the data was used for testing and 75% for training.
+
+18️⃣ Q: What is the importance of random_state=42?
+    A: It ensures reproducibility of results by controlling the random data split.
+
+19️⃣ Q: What improvements can be done in this experiment?
+    A: Applying feature scaling, hyperparameter tuning, dimensionality reduction (PCA), and trying other models like Naive Bayes or Random Forest.
+
+20️⃣ Q: What is your final conclusion?
+    A: SVM performs better for this dataset, providing higher accuracy and precision, making it a reliable choice for spam detection.

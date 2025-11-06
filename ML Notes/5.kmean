@@ -1,0 +1,59 @@
+Q1. What is the objective of this experiment?
+A1. The objective is to implement K-Means clustering on the sales dataset and determine the optimal number of clusters using the elbow method.
+
+Q2. What is clustering in machine learning?
+A2. Clustering is an unsupervised learning technique that groups similar data points together based on their characteristics.
+
+Q3. What is K-Means clustering?
+A3. K-Means is an unsupervised learning algorithm that divides data into K clusters by minimizing the distance between points and their cluster centers.
+
+Q4. What is the main idea behind K-Means?
+A4. The main idea is to partition data into K clusters where each data point belongs to the cluster with the nearest mean.
+
+Q5. What dataset is used in this experiment?
+A5. The dataset used is "sales_data_sample.csv" from Kaggle, which contains sales-related information.
+
+Q6. Which features are used for clustering?
+A6. The numerical features used are QUANTITYORDERED, PRICEEACH, and SALES.
+
+Q7. Why do we use StandardScaler before applying K-Means?
+A7. StandardScaler normalizes the features to ensure all variables contribute equally to the distance calculation.
+
+Q8. What is the purpose of the Elbow Method?
+A8. The Elbow Method helps determine the optimal number of clusters (k) by finding the point where the SSE (sum of squared errors) curve starts to flatten.
+
+Q9. What does SSE (Sum of Squared Errors) mean?
+A9. SSE measures how close data points are to their cluster centers. A lower SSE indicates tighter clusters.
+
+Q10. What range of k values was tested in the Elbow Method?
+A10. The range of k tested was from 1 to 10.
+
+Q11. How many clusters were found optimal from the elbow plot?
+A11. The optimal number of clusters was chosen as 4.
+
+Q12. What function in scikit-learn is used for K-Means clustering?
+A12. The function used is `KMeans()` from `sklearn.cluster`.
+
+Q13. What parameter in KMeans defines the number of clusters?
+A13. The parameter `n_clusters` defines the number of clusters (K value).
+
+Q14. What is the role of the random_state parameter?
+A14. It ensures reproducibility of results by controlling random number generation.
+
+Q15. What do the cluster labels represent?
+A15. Cluster labels represent the group each data point belongs to after clustering.
+
+Q16. What is the output of the algorithm in this experiment?
+A16. The output shows the sales records with an additional column “Cluster” indicating the cluster number.
+
+Q17. Is K-Means supervised or unsupervised learning?
+A17. K-Means is an unsupervised learning algorithm.
+
+Q18. What are the advantages of K-Means?
+A18. It is simple, fast, and works well for large datasets with well-separated clusters.
+
+Q19. What are the disadvantages of K-Means?
+A19. It requires the number of clusters (K) to be known in advance and is sensitive to outliers.
+
+Q20. What conclusion can you draw from this experiment?
+A20. The sales data was successfully grouped into 4 meaningful clusters, helping in better sales analysis and customer segmentation.

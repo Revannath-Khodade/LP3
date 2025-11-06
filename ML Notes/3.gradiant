@@ -1,0 +1,44 @@
+Q1. What is Gradient Descent?
+A1. Gradient Descent is an optimization algorithm used to find the minimum value of a function by iteratively moving in the direction of the negative gradient.
+
+Q2. What is the objective of this experiment?
+A2. The objective is to find the local minima of the function y = (x + 3)² using the Gradient Descent algorithm starting from x = 2.
+
+Q3. What is the mathematical derivative of the function y = (x + 3)²?
+A3. The derivative dy/dx = 2(x + 3).
+
+Q4. What is the update rule used in Gradient Descent?
+A4. The update rule is: x_new = x_old - learning_rate * gradient.
+
+Q5. What is the role of the learning rate?
+A5. The learning rate determines how big a step we take in the direction of the negative gradient. If it's too high, we may overshoot the minima; if too low, convergence will be very slow.
+
+Q6. What are the parameters used in this code?
+A6. start_x (initial point), learning_rate (step size), max_iter (maximum iterations), and tolerance (stopping condition).
+
+Q7. What is the stopping criterion used in the code?
+A7. The algorithm stops when the change in x between iterations is less than the tolerance value (1e-6).
+
+Q8. What is the initial value of x in this program?
+A8. The initial value of x is 2.
+
+Q9. What is the final output or local minima found by the algorithm?
+A9. The local minima is approximately at x = -2.9999, where y ≈ 0.
+
+Q10. Why is the local minima at x = -3?
+A10. Because at x = -3, the derivative becomes zero (dy/dx = 0), and the function y = (x + 3)² reaches its lowest point.
+
+Q11. How does the gradient change during the process?
+A11. The gradient (slope) decreases as x approaches -3, and becomes nearly zero at the minima.
+
+Q12. What is stored in the variable ‘history’ in this code?
+A12. It stores all intermediate x-values from each iteration to visualize how the algorithm approaches the minimum.
+
+Q13. What is the purpose of the plot in the code?
+A13. The plot shows the function curve y = (x + 3)² and red dots indicating the step-by-step movement of Gradient Descent towards the minimum.
+
+Q14. What will happen if we increase the learning rate too much?
+A14. The algorithm may overshoot the minimum and fail to converge.
+
+Q15. What type of problem does Gradient Descent solve?
+A15. It is mainly used in optimization problems, especially in machine learning for minimizing cost or error functions.

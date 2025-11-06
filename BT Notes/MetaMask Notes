@@ -1,3 +1,75 @@
+Q1. What is MetaMask?
+A1. MetaMask is a cryptocurrency wallet and browser extension that allows users to interact with the Ethereum blockchain and decentralized applications (DApps).
+
+Q2. Why do we use MetaMask?
+A2. It helps users securely store, send, and receive Ethereum and ERC-20 tokens, and connect with blockchain-based applications directly from a web browser.
+
+Q3. What are the steps to install MetaMask?
+A3. 
+1. Open Chrome or Firefox browser.
+2. Visit https://metamask.io.
+3. Click “Install MetaMask for Chrome/Firefox.”
+4. Add the extension to the browser.
+5. Click on the MetaMask icon to open it.
+
+Q4. How do you create a wallet in MetaMask?
+A4. 
+1. Click “Create a Wallet.”
+2. Set a strong password.
+3. Write down the Secret Recovery Phrase (12 words).
+4. Confirm the phrase and complete wallet setup.
+
+Q5. What is a Secret Recovery Phrase?
+A5. It is a 12-word phrase used to recover or restore a MetaMask wallet if it is lost or deleted.
+
+Q6. Why is the Secret Recovery Phrase important?
+A6. It is the only way to recover your funds if you lose access to your wallet. It must be kept private and secure.
+
+Q7. What is an Ethereum address?
+A7. It is a unique alphanumeric string starting with “0x” that represents your wallet’s public address on the Ethereum blockchain.
+
+Q8. What is Ether (ETH)?
+A8. Ether is the native cryptocurrency of the Ethereum blockchain, used to pay transaction fees and interact with smart contracts.
+
+Q9. What is “gas” in Ethereum transactions?
+A9. Gas is the fee paid to miners for processing and validating transactions on the Ethereum network.
+
+Q10. How is the transaction fee calculated?
+A10. Transaction Fee = Gas Limit × Gas Price.
+
+Q11. What happens if you set a low gas fee?
+A11. The transaction might take longer to confirm or may fail if the fee is too low.
+
+Q12. What happens if you lose your MetaMask password?
+A12. You can restore access using your Secret Recovery Phrase.
+
+Q13. Can MetaMask hold Bitcoin?
+A13. No, MetaMask supports Ethereum and Ethereum-compatible blockchains (like BSC, Polygon), not Bitcoin directly.
+
+Q14. What networks can you add to MetaMask?
+A14. You can add custom networks like Binance Smart Chain, Polygon, Avalanche, etc.
+
+Q15. What is the default network in MetaMask?
+A15. The Ethereum Mainnet is the default network.
+
+Q16. How do you switch between networks in MetaMask?
+A16. Click the network dropdown at the top of MetaMask and select the desired network.
+
+Q17. Can you connect MetaMask to test networks?
+A17. Yes, MetaMask can connect to testnets like Goerli, Sepolia, etc., for testing smart contracts without spending real Ether.
+
+Q18. What is the purpose of using test networks?
+A18. Test networks allow developers to simulate transactions and test DApps using fake Ether without real cost.
+
+Q19. How can you check the balance in MetaMask?
+A19. After wallet creation, the balance is shown on the main dashboard. It updates automatically when Ether is received.
+
+Q20. What is the conclusion of this experiment?
+A20. MetaMask was successfully installed, a new wallet was created, and the process of spending Ether per transaction was studied.
+
+
+
+
 🔹 What is MetaMask?
 MetaMask is a cryptocurrency wallet and gateway to blockchain applications (like Ethereum and DApps).
 It allows users to send, receive, and store Ether (ETH) and other ERC-20 tokens.

@@ -1,0 +1,60 @@
+Q1. What is the objective of this experiment?
+A1. The objective is to implement the K-Nearest Neighbors (KNN) algorithm on the diabetes dataset and compute performance metrics such as confusion matrix, accuracy, error rate, precision, recall, and F1-score.
+
+Q2. What is the K-Nearest Neighbors (KNN) algorithm?
+A2. KNN is a supervised machine learning algorithm used for classification and regression. It classifies a new data point based on the majority class among its 'k' nearest neighbors in the feature space.
+
+Q3. How does KNN determine the class of a new data point?
+A3. KNN calculates the distance (usually Euclidean) between the new point and all training points, selects the k closest ones, and assigns the class that occurs most frequently among those neighbors.
+
+Q4. What is the value of k used in this experiment?
+A4. The value of k is 5.
+
+Q5. Which dataset is used here?
+A5. The dataset used is the "diabetes.csv" dataset from Kaggle, which contains medical details of patients and whether they have diabetes or not.
+
+Q6. What are the input features and target variable?
+A6. Input features: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, Pedigree, and Age.  
+Target variable: Outcome (1 = Diabetic, 0 = Non-diabetic).
+
+Q7. Why did we replace zeros with mean values in some columns?
+A7. Because zero is an invalid value for medical parameters like Glucose or BMI, so we replaced them with the column mean to maintain data consistency.
+
+Q8. What is the role of train_test_split() in the code?
+A8. It splits the dataset into training and testing parts. In this code, 80% data is used for training and 20% for testing.
+
+Q9. What does the confusion matrix represent?
+A9. The confusion matrix shows the count of correct and incorrect predictions. It contains True Positives, True Negatives, False Positives, and False Negatives.
+
+Q10. What is the accuracy score obtained in your output?
+A10. The accuracy score obtained is approximately 0.75 (or 75.32%).
+
+Q11. What is the error rate?
+A11. The error rate is 1 - accuracy, which equals approximately 0.2467 (or 24.67%).
+
+Q12. What is precision, and what is its value?
+A12. Precision is the ratio of correctly predicted positive observations to total predicted positives. The precision value here is approximately 0.5957.
+
+Q13. What is recall, and what is its value?
+A13. Recall is the ratio of correctly predicted positive observations to all actual positives. The recall value here is also approximately 0.5957.
+
+Q14. What is the F1-score, and why is it important?
+A14. The F1-score is the harmonic mean of precision and recall, providing a balance between them. Its value here is approximately 0.5957.
+
+Q15. What is the advantage of using KNN?
+A15. KNN is simple, non-parametric, and effective for smaller datasets with clear class boundaries.
+
+Q16. What is a disadvantage of KNN?
+A16. KNN can be computationally expensive for large datasets since it requires calculating distances for every new point. It’s also sensitive to irrelevant features and feature scaling.
+
+Q17. How can the accuracy of KNN be improved?
+A17. By choosing an optimal value of ‘k’, normalizing the data, removing irrelevant features, or using weighted KNN.
+
+Q18. What type of learning does KNN belong to?
+A18. KNN is an example of supervised learning, specifically an instance-based or lazy learning algorithm.
+
+Q19. Why is KNN called a lazy learner?
+A19. Because it does not learn any discriminative function during training; it simply stores the training data and performs classification only when a query instance is given.
+
+Q20. What conclusion can you draw from this experiment?
+A20. The KNN model achieved about 75% accuracy in predicting diabetes, showing moderate performance. It can be further improved by optimizing hyperparameters or applying data normalization.
